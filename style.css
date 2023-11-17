@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #ff379e;
+    --pink2: #FF007F;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    columns: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* Navbar Section */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    padding: 25px;
+    background: var(--pink);
+    flex-basis: 100%;
+}
+.header .logo_Wrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.logo_Wrapper img{
+    width: 70px;
+}
+
+.logo_Wrapper span{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--white);
+}
+.header nav {
+ margin-right: 25%;
+}
+.header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+
+}
+.header nav ul li a{   
+ font-size: 14px;
+ font-weight: 400;
+ color: var(--white);
+ text-transform: uppercase;
+ transition: color 0.3s ease, background-color 0.3s ease; /* Transition only color and background */
+ padding: 6px 20px; 
+ border-radius: 5px; 
+ background-color: transparent; 
+}
+
+
+.header nav ul li a:hover,
+.header nav ul li a:active,
+.header nav ul li a:focus,
+.header nav ul li a.active{
+    color: #000; 
+    background-color: var(--white);
+}
+
+
+
+/* hero section */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./images/bg.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    height: 350px;
+    background: var(--white);
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+}
+.innerContainer h2{
+    padding: 12px;
+   font-size: 40px;
+   font-weight: 700;
+   color: var(--gray-dark);
+}
+.innerContainer h2 p{
+
+}
+.inputCntainer{
+    max-width: 600px;
+    width: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.inputCntainer input{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    background: transparent;
+    padding: 0 7px 0 43px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.inputCntainer .search_Btn{
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,213,232,1) 0%, rgba(131,113,228,1) 46%, rgba(255,0,224,1) 98%);
+    color: var(--white);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/* fashion */
+
+.fashion{
+    width: 100%;
+    height: 850px;
+    background-image: url('./images/fashion-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* feature section*/
+
+.feature{
+ padding: 10px 0;
+ background: #f9f9f9;
+
+}
+
+.feature h2{
+    /* margin-top: 40px; */
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.innerfeature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.innerfeature .money,.shopping,.lock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.moneypara,.shoppara,.lockpara{
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;  
+}
+
+.innerfeature .money .myicon,.shopping .myicon,.lock .myicon{
+   font-size: 35px;
+   color: var(--pink);
+}
+
+
+
+
+/* partnership section */
+
+.partnership{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     padding: 50px 0;
+}
+
+.partnership h2, .guide h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.partnership button{
+    width: max-content;
+    padding: 15px 20px;
+    background: var(--pink2);
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.guide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0;
+    background: var(--pink2);
+}
+.guide h2{
+    color: #fff;
+}
+
+.guide button{
+    width: max-content;
+    padding: 10px 10px;
+    background: var(--green);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.guide button:hover{
+    transition: 0.3s ease-in-out;
+    background: var(--pink);
+    color: var(--blue);
+}
+
+/* footer section */
+
+footer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ gap: 10px;
+ padding: 80px 0;
+}
+
+footer .copyright{
+    font-size: 14px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+footer p{
+font-size: 14px;
+line-height: 1.7;
+cursor: pointer;
+}
+
+
+footer .social_Icons{
+    display: flex;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+footer .social_Icons .fa-facebook-f{
+    
+    border-radius: 50%;
+    width: 54px;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    background:#3b5998;
+    cursor: pointer;
+}
+
+.social_Icons .fa-instagram{
+    border-radius: 50%;
+    width: 54px;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    background:#ff2d98;
+    cursor: pointer;
+}
+.social_Icons .fa-linkedin-in{
+    border-radius: 50%;
+    width: 54px;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    background:#0976b4;
+    cursor: pointer;
+}
+
+
+
+/* login section */
+
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    height: 600px;
+    background: var(--white);
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+}
+
+.loginContainer h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.loginContainer form input{
+    width: 400px;
+    height: 55px;
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.2;
+    background: transparent;
+    padding: 0 7px 0 43px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+}
+ .loginContainer form input::placeholder{
+    color: var(--gray);
+    color: #a5a2a2;
+    font-weight: 600;
+    font-size: 14px;
+}
+.loginContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.loginContainer form label{
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    margin-bottom: 30px;
+     /* display: flex;
+     flex-direction: column; */
+}
+.loginContainer form .inputDiv .innerInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column;   */
+    margin-bottom: 20px;
+}
+.loginContainer form .inputDiv .innerInput .fa-solid{
+    color: #a5a2a2;
+}
+.loginContainer  form .login_Btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,213,232,1) 0%, rgba(131,113,228,1) 46%, rgba(255,0,224,1) 98%);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.forget_Pass{
+     text-align: right;
+     font-size: 15px;
+     color: var(--blue);
+     margin-bottom: 10px;
+}
+.or{
+    font-size: 12px;
+    color: var(--gray);
+ text-align: center;
+ padding: 5px 0;
+}
+.signUplink{
+    font-size: 16px;
+   text-align: center;
+   padding: 5px 0;  
+}
+
+
+
+/* register section */
+
+
+.registerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    height: 800px;
+    margin: 10px 0;
+    background: var(--white);
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+}
+
+.registerContainer h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.registerContainer form input{
+    width: 350px;
+    height: 55px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    background: transparent;
+    padding: 0 7px 0 43px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+}
+.registerContainer form input::placeholder{
+    color: #a5a2a2;
+    font-size: 14px;
+    font-weight: 600;
+}
+.registerContainer form .inputDiv .innerInput .fa-solid{
+    color: #a5a2a2;
+}
+.registerContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.registerContainer form label{
+    font-size: 12px;
+    color: #333;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.registerContainer form .inputDiv .innerInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+form .register_Btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,213,232,1) 0%, rgba(131,113,228,1) 46%, rgba(255,0,224,1) 98%);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+/* contact section */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./images/bg.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1200px;
+    height: auto;
+    background: var(--white);
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+}
+
+
+.contactContainer h2{
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.innerContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 50px;
+}
+.innerContact .contactText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+.innerContact .contactText.prefer{
+    padding: 10px 0;
+}
+.innerContact .contactText.details{
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+.innerContact .contactText.prefer button{
+    margin-top: 20px;
+}
+.innerContact h6{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.innerContact a{
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+}
+.innerContact button{
+    width: 100%;
+    font-size: 1.75rem;
+    font-weight: 700;
+    background-color: var(--pink);
+    border-radius: 10px;
+    padding: 10px 0;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+
+
+
+/* Responsive Media Queeries Start */
+@media only screen and (max-width:600px){
+    .hero{
+           width: 100%;
+           min-height: 100vh;
+         }
+   .hero .innerContainer{
+        width: 100%;
+        margin: 0 60px;
+       }
+    .innerContainer h2{
+       font-size: 38px;
+      }
+
+    .inputCntainer{
+        max-width: 500px;
+        width: 350px;
+        padding: 0 10px;
+    }
+    .inputCntainer input{
+        width: 100%;
+    }
+    .inputCntainer input::placeholder{
+        color: #a5a2a2;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+    .inputCntainer .search_Btn{
+        width: 100%;
+    } 
+
+
+
+    .fashion{
+        width: 100%;
+        height: 250px;
+        padding: 0;
+        margin: 0;
+        background-size: contain
+
+    }
+       
+       .feature h2{
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+
+       }
+       
+       
+       .innerfeature{
+           padding: 0 20px;
+       }
+       
+       .innerfeature .money,.shopping,.lock{
+        width: 100%;
+        padding: 30px 15px;
+       }
+       
+       .moneypara,.shoppara,.lockpara{
+        font-size: 14px;
+        text-align: center;
+       }
+       
+       .innerfeature .money .myicon,.shopping .myicon,.lock .myicon{
+          font-size: 30px;
+       }
+
+
+    
+.partnership h2, .guide h2{
+    text-align: center;
+}
+.guide h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.loginContainer{
+    max-width: 500px;
+    width: 350px;
+    padding: 0 10px;
+}
+
+.loginContainer h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.loginContainer form input{
+  width: 100%;
+}
+ .loginContainer form input::placeholder{
+    font-size: 16px;
+}
+.loginContainer form{
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+.loginContainer  form .login_Btn{
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+.registerContainer{
+    max-width: 500px;
+    width: 350px;
+    padding: 0 10px;
+}
+
+
+.registerContainer form input{
+  width: 100%;
+}
+ .registerContainer form input::placeholder{
+    font-size: 16px;
+}
+.registerContainer form{
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+.registerContainer  form .login_Btn{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.contactContainer{
+    max-width: 500px;
+    width: 350px;
+}
+
+.innerContact .contactText.prefer{
+    padding: 10px 0;
+}
+.innerContact .contactText.details{
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+.innerContact .contactText.prefer button{
+    margin-top: 20px;
+}
+.innerContact h6{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+     
+footer{
+    padding: 100px 0;
+}
+
+}
