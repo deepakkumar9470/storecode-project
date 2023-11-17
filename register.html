@@ -1,107 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link rel="stylesheet" href="style.css">
+      rel="shortcut icon"
+      href="/images/storecode.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Register</title>
-</head>
-<body>
-   
-       <!-- Navbar Section Start -->
-    
-        <div class="header">
-              <div class="logo_Wrapper">
-                <img src="./images/logo.png" alt="logo">
-                <span>STORECODE</span>
-              </div>
+  </head>
+  <body>
+    <!-- Navbar Section Start -->
+    <header>
+      <div class="logo_Wrapper">
+        <img src="./images/logo.png" alt="logo" />
+        <span>STORECODE</span>
+      </div>
+      <i class="menu fa-solid fa-bars"></i>
 
-              <nav>
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-              </nav>
+      <nav class="nav_Bar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Navbar Section End -->
 
-        </div>
-       <!-- Navbar Section End -->
+    <!-- Hero Section Start -->
+    <div class="hero">
+      <div class="registerContainer">
+        <h2>Register</h2>
 
-       <!-- Hero Section Start -->
-        <div class="hero">          
-            <div class="registerContainer">
-                <h2>Register</h2>
-
-                <form>
-                    <div class="inputDiv">
-                        <label for="email">Name</label>
-                        <div class="innerInput">
-                          <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Enter name">
-                        </div>
-                    </div>
-                    <div class="inputDiv">
-                      <label for="storename">Store Name</label>
-                      <div class="innerInput">
-                        <i class="fa-solid fa-store"></i>
-                      <input type="text" placeholder="Storename">
-                      </div>
-                  </div>
-                  <div class="inputDiv">
-                    <label for="mobile">Mobile</label>
-                    <div class="innerInput">
-                      <i class="fa-solid fa-mobile"></i>
-                      <input type="number" placeholder="Mobile No">
-                    </div>
-                </div>
-                    <div class="inputDiv">
-                        <label for="email">Email Id</label>
-                        <div class="innerInput">
-                          <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email Id">
-                        </div>
-                    </div>
-                    <div class="inputDiv">
-                        <label for="password">Password Id</label>
-                       <div class="innerInput">
-                        <i class="fa-solid fa-lock"></i>                       
-                        <input type="password" placeholder="Password ">
-                       </div>
-                    </div>
-                    <button class="register_Btn">Register</button>
-                    <p class="or">Or Sign In Using</p>
-                    <a class="signUplink" href="index.html">SIGN IN</a>
-                  </form>
-              
+        <form>
+          <div class="inputDiv">
+            <label for="email">Name</label>
+            <div class="innerInput">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Enter name" />
             </div>
-
-        </div>
-      <!-- Hero Section End -->
-
-  
-
-
-     <!-- Footer Section Start -->
-        <footer>
-            <p class="copyright">&copy; 2023 All Rights Reserved By StoreCode</p>
-            <p>Privacy Policy</p>
-            <div class="social_Icons">
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-
+          </div>
+          <div class="inputDiv">
+            <label for="storename">Store Name</label>
+            <div class="innerInput">
+              <i class="fa-solid fa-store"></i>
+              <input type="text" placeholder="Storename" />
             </div>
+          </div>
+          <div class="inputDiv">
+            <label for="mobile">Mobile</label>
+            <div class="innerInput">
+              <i class="fa-solid fa-mobile"></i>
+              <input type="number" placeholder="Mobile No" />
+            </div>
+          </div>
+          <div class="inputDiv">
+            <label for="email">Email Id</label>
+            <div class="innerInput">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email Id" />
+            </div>
+          </div>
+          <div class="inputDiv">
+            <label for="password">Password Id</label>
+            <div class="innerInput">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password " />
+            </div>
+          </div>
+          <button class="register_Btn">Register</button>
+          <p class="or">Or Sign In Using</p>
+          <a class="signUplink" href="index.html">SIGN IN</a>
+        </form>
+      </div>
+    </div>
+    <!-- Hero Section End -->
 
-        </footer>
-     <!-- Footer Section End -->
-</body>
+    <!-- Footer Section Start -->
+    <footer>
+      <p class="copyright">&copy; 2023 All Rights Reserved By StoreCode</p>
+      <p>Privacy Policy</p>
+      <div class="social_Icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script>
+      menu = document.querySelector(".menu");
+      menu.onclick = function () {
+        navBar = document.querySelector(".nav_Bar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+  </body>
 </html>
