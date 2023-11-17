@@ -102,7 +102,7 @@ header nav ul li a.active {
 
 /* hero section */
 
-.hero {
+.hero,.store {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,7 +179,44 @@ header nav ul li a.active {
   cursor: pointer;
 }
 
-/* fashion */
+/* store section */
+.store  .storeText{
+  display: flex;
+  align-items:center;
+  gap:20px;
+  padding: 20px 0;
+  /* justify-content: center; */
+
+}
+
+.innerStoreContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  height: 200px;
+  background: var(--white);
+  align-items: center;
+  /* justify-content: center; */
+  border-radius: 10px;
+}
+.store  .storeCntainer{
+  max-width: 500px;
+  width: 350px;
+  padding: 0 10px;
+}
+.store .storeCntainer .storeText img{
+  width: 100px;
+  border-radius: 50%;
+}
+.store .storeCntainer .storeText p{
+  font-size: 18px;
+  font-weight: 400;
+}
+.store .storeCntainer  p{
+  font-size: 14px;
+}
+/* fashion section */
 
 .fashion {
   width: 100%;
@@ -803,7 +840,9 @@ form .register_Btn {
     text-align: justify;
     line-height: 1.5;
   }
-
+   .innerStoreContainer{
+    width: 350px;
+   }
   footer {
     padding: 100px 0;
   }
